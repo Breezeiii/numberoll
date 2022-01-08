@@ -14,6 +14,12 @@
       v-model="percent"
       format="+0.[0]%"
     />
+    <numberoll
+      class="numberoll-5"
+      :class="percent > 0 ? 'color-success' : 'color-danger'"
+      v-model="percent"
+      format="+0.0%"
+    />
   </div>
 
   <div class="numberoll-group numberoll-custom">
