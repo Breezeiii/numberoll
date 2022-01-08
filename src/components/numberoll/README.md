@@ -36,9 +36,9 @@ const options = {
       symbol: "¥"
     }
   }
-}
+};
 
-app.use(numberoll , options);
+app.use(numberoll, options);
 ```
 
 ### props
@@ -75,14 +75,14 @@ const customValue = ref("123#456$678*9.123.456.789.0");
 
 ```vue
 <template>
-	<numberoll v-model="num" />
-    <br />
-	<!-- $货币占位符，固定为$，最终显示请配置全局options -->
-    <numberoll v-model="num" format="$0,0" />
-    <br />
-    <numberoll v-model="num" format="0,0$" />
-    <br />
-    <numberoll v-model="percent" format="+0.[0]%"/>
+  <numberoll v-model="num" />
+  <br />
+  <!-- $货币占位符，固定为$，最终显示请配置全局options -->
+  <numberoll v-model="num" format="$0,0" />
+  <br />
+  <numberoll v-model="num" format="0,0$" />
+  <br />
+  <numberoll v-model="percent" format="+0.[0]%" />
 </template>
 
 <script setup>
@@ -95,5 +95,6 @@ setInterval(() => {
   percent.value = Math.random() * (Math.random() > 0.5 ? 1 : -1);
 }, 3000);
 </script>
+
 ```
 
