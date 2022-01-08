@@ -68,25 +68,4 @@ const customValue = ref("123#456$678*9.123.456.789.0");
 </script>
 ```
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#################################################################################################################################################################################################################################################################################################################################################################################################
