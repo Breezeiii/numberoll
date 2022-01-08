@@ -60,8 +60,8 @@ customValue: [String, Number], // 自定义数字格式
 
 ```vue
 <template>
-    <h3>自定义数字格式</h3>
-    <numberoll :custom-value="customValue" />
+  <h3>自定义数字格式</h3>
+  <numberoll :custom-value="customValue" />
 </template>
 
 <script setup>
@@ -95,6 +95,4 @@ setInterval(() => {
   percent.value = Math.random() * (Math.random() > 0.5 ? 1 : -1);
 }, 3000);
 </script>
-
 ```
-
