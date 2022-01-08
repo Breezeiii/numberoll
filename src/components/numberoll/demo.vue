@@ -14,11 +14,12 @@
       v-model="percent"
       format="+0.[0]%"
     />
+    <br />
     <numberoll
       class="numberoll-5"
       :class="percent > 0 ? 'color-success' : 'color-danger'"
       v-model="percent"
-      format="+0.0%"
+      format="+0.00%"
     />
   </div>
 
@@ -76,7 +77,7 @@ $color-danger: #ff0000;
 .color-danger {
   color: $color-danger;
 }
-@for $i from 0 through 4 {
+@for $i from 0 through 10 {
   .numberoll-#{$i} {
     font-size: 18px + $i * 10;
   }
