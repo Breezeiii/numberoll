@@ -33,7 +33,7 @@ setInterval(() => {
   percent.value = Math.random() * (Math.random() > 0.5 ? 1 : -1);
 }, 3000);
 
-const customValue = ref("123#456$678*9.1234567890");
+const customValue = ref("123#456$678*9.123.456.789.0");
 </script>
 
 <style lang="scss">

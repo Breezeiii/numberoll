@@ -9,10 +9,19 @@
   "dependencies": {
     "numeral": "^2.0.6"
   },
-  "git repository": "https://github.com/LIUHAIFENGzzzzz/numberoll",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LIUHAIFENGzzzzz/numberoll"
+  },
+  "bugs": {
+    "url": "https://github.com/LIUHAIFENGzzzzz/numberoll/issues"
+  },
+  "homepage": "https://liuhaifengzzzzz.github.io/numberoll",
   "keywords": [
     "vue3",
-    "数字滑动"
+    "数字滑动",
+    "number",
+    "roll"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

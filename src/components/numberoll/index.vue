@@ -40,13 +40,14 @@ import { defineProps, ref, watchEffect } from "vue";
 
 const props = defineProps({
   modelValue: { type: Number, default: 0 },
-  customValue: [String, Number],
 
   duration: { type: String, default: "0.25s" },
   delay: String,
   easing: { type: String, default: "linear" },
 
-  format: { type: String, default: "0,0.00" }
+  format: { type: String, default: "0,0.00" },
+
+  customValue: [String, Number]
 });
 
 const value = ref(null);
