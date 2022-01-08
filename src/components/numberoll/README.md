@@ -66,13 +66,7 @@ import { ref } from "vue";
 
 const customValue = ref("123#456$678*9.123.456.789.0");
 </script>
- 
-
 ```
-
-## Project setup
-
-
 
 ## Project setup
 ```
