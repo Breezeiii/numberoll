@@ -1,0 +1,131 @@
+.numroll,
+.numroll .numroll-col {
+  display: inline-block;
+}
+
+.numroll [class*="numroll"] {
+  animation-duration: inherit;
+  animation-timing-function: inherit;
+  animation-delay: inherit;
+}
+
+.numroll .numroll-col {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.numroll .numroll-col .numroll-placeholder.numroll-placeholder-visible {
+  opacity: 0;
+  visibility: visible;
+}
+
+.numroll .numroll-col .numroll-slider {
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(0);
+  animation-fill-mode: forwards;
+}
+
+@keyframes slider-0 {
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.numroll .numroll-col .numroll-slider-0 {
+  animation-name: slider-0;
+}
+
+@keyframes slider-1 {
+  to {
+    transform: translateY(-10%);
+  }
+}
+
+.numroll .numroll-col .numroll-slider-1 {
+  animation-name: slider-1;
+}
+
+@keyframes slider-2 {
+  to {
+    transform: translateY(-20%);
+  }
+}
+
+.numroll .numroll-col .numroll-slider-2 {
+  animation-name: slider-2;
+}
+
+@keyframes slider-3 {
+  to {
+    transform: translateY(-30%);
+  }
+}
+
+.numroll .numroll-col .numroll-slider-3 {
+  animation-name: slider-3;
+}
+
+@keyframes slider-4 {
+  to {
+    transform: translateY(-40%);
+  }
+}
+
+.numroll .numroll-col .numroll-slider-4 {
+  animation-name: slider-4;
+}
+
+@keyframes slider-5 {
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.numroll .numroll-col .numroll-slider-5 {
+  animation-name: slider-5;
+}
+
+@keyframes slider-6 {
+  to {
+    transform: translateY(-60%);
+  }
+}
+
+.numroll .numroll-col .numroll-slider-6 {
+  animation-name: slider-6;
+}
+
+@keyframes slider-7 {
+  to {
+    transform: translateY(-70%);
+  }
+}
+
+.numroll .numroll-col .numroll-slider-7 {
+  animation-name: slider-7;
+}
+
+@keyframes slider-8 {
+  to {
+    transform: translateY(-80%);
+  }
+}
+
+.numroll .numroll-col .numroll-slider-8 {
+  animation-name: slider-8;
+}
+
+@keyframes slider-9 {
+  to {
+    transform: translateY(-90%);
+  }
+}
+
+.numroll .numroll-col .numroll-slider-9 {
+  animation-name: slider-9;
+}

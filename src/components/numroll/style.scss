@@ -1,0 +1,51 @@
+$prefix: numroll;
+
+.#{$prefix} {
+  &,
+  .#{$prefix}-col {
+    display: inline-block;
+  }
+
+  [class*="#{$prefix}"] {
+    animation-duration: inherit;
+    animation-timing-function: inherit;
+    animation-delay: inherit;
+  }
+
+  .#{$prefix}-col {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+
+    .#{$prefix}-placeholder {
+      &.numroll-placeholder-visible {
+        opacity: 0;
+        visibility: visible;
+      }
+    }
+
+    .#{$prefix}-slider {
+      display: inline-flex;
+      flex-direction: column;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(0);
+
+      animation-fill-mode: forwards;
+    }
+
+    @for $i from 0 through 9 {
+      @keyframes slider-#{$i} {
+        to {
+          transform: translateY(#{- ($i * 10)+"%"});
+        }
+      }
+
+      .#{$prefix}-slider-#{$i} {
+        animation-name: slider-#{$i};
+      }
+    }
+  }
+}
