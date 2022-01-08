@@ -57,7 +57,7 @@ customValue: [String, Number], // 自定义数字格式
 
 ```vue
 <template>
-    <h3 class="title">自定义数字格式</h3>
+    <h3>自定义数字格式</h3>
     <numberoll :custom-value="customValue" />
 </template>
 
