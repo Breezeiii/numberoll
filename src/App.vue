@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-import numDemo from "./components/numroll/demo.vue";
+import numDemo from "@/components/numberoll/demo.vue";
 </script>
 
 <style lang="scss">

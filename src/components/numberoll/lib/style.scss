@@ -1,4 +1,4 @@
-$prefix: numroll;
+$prefix: numberoll;
 
 .#{$prefix} {
   &,
@@ -18,7 +18,7 @@ $prefix: numroll;
     overflow: hidden;
 
     .#{$prefix}-placeholder {
-      &.numroll-placeholder-visible {
+      &.numberoll-placeholder-visible {
         opacity: 0;
         visibility: visible;
       }

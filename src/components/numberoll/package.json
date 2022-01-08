@@ -1,0 +1,22 @@
+{
+  "name": "numberoll",
+  "version": "1.0.0",
+  "description": "数字滑动",
+  "main": "index.vue",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "numeral": "^2.0.6"
+  },
+  "git repository": "https://github.com/LIUHAIFENGzzzzz/numberoll",
+  "keywords": [
+    "vue3",
+    "数字滑动"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LIUHAIFENG",
+  "license": "ISC"
+}

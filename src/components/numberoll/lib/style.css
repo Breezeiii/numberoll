@@ -1,26 +1,26 @@
-.numroll,
-.numroll .numroll-col {
+.numberoll,
+.numberoll .numberoll-col {
   display: inline-block;
 }
 
-.numroll [class*="numroll"] {
+.numberoll [class*="numberoll"] {
   animation-duration: inherit;
   animation-timing-function: inherit;
   animation-delay: inherit;
 }
 
-.numroll .numroll-col {
+.numberoll .numberoll-col {
   position: relative;
   text-align: center;
   overflow: hidden;
 }
 
-.numroll .numroll-col .numroll-placeholder.numroll-placeholder-visible {
+.numberoll .numberoll-col .numberoll-placeholder.numberoll-placeholder-visible {
   opacity: 0;
   visibility: visible;
 }
 
-.numroll .numroll-col .numroll-slider {
+.numberoll .numberoll-col .numberoll-slider {
   display: inline-flex;
   flex-direction: column;
   position: absolute;
@@ -36,7 +36,7 @@
   }
 }
 
-.numroll .numroll-col .numroll-slider-0 {
+.numberoll .numberoll-col .numberoll-slider-0 {
   animation-name: slider-0;
 }
 
@@ -46,7 +46,7 @@
   }
 }
 
-.numroll .numroll-col .numroll-slider-1 {
+.numberoll .numberoll-col .numberoll-slider-1 {
   animation-name: slider-1;
 }
 
@@ -56,7 +56,7 @@
   }
 }
 
-.numroll .numroll-col .numroll-slider-2 {
+.numberoll .numberoll-col .numberoll-slider-2 {
   animation-name: slider-2;
 }
 
@@ -66,7 +66,7 @@
   }
 }
 
-.numroll .numroll-col .numroll-slider-3 {
+.numberoll .numberoll-col .numberoll-slider-3 {
   animation-name: slider-3;
 }
 
@@ -76,7 +76,7 @@
   }
 }
 
-.numroll .numroll-col .numroll-slider-4 {
+.numberoll .numberoll-col .numberoll-slider-4 {
   animation-name: slider-4;
 }
 
@@ -86,7 +86,7 @@
   }
 }
 
-.numroll .numroll-col .numroll-slider-5 {
+.numberoll .numberoll-col .numberoll-slider-5 {
   animation-name: slider-5;
 }
 
@@ -96,7 +96,7 @@
   }
 }
 
-.numroll .numroll-col .numroll-slider-6 {
+.numberoll .numberoll-col .numberoll-slider-6 {
   animation-name: slider-6;
 }
 
@@ -106,7 +106,7 @@
   }
 }
 
-.numroll .numroll-col .numroll-slider-7 {
+.numberoll .numberoll-col .numberoll-slider-7 {
   animation-name: slider-7;
 }
 
@@ -116,7 +116,7 @@
   }
 }
 
-.numroll .numroll-col .numroll-slider-8 {
+.numberoll .numberoll-col .numberoll-slider-8 {
   animation-name: slider-8;
 }
 
@@ -126,6 +126,6 @@
   }
 }
 
-.numroll .numroll-col .numroll-slider-9 {
+.numberoll .numberoll-col .numberoll-slider-9 {
   animation-name: slider-9;
 }

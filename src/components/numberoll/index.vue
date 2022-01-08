@@ -1,28 +1,28 @@
 <template>
   <span
-    class="numroll"
+    class="numberoll"
     :style="{
       'animation-duration': duration,
       'animation-delay': delay,
       'animation-timing-function': easing
     }"
   >
-    <span class="numroll-col" v-for="(item, index) in value" :key="index">
+    <span class="numberoll-col" v-for="(item, index) in value" :key="index">
       <span
         :class="[
-          'numroll-placeholder',
-          isNumber(item) ? 'numroll-placeholder-visible' : ''
+          'numberoll-placeholder',
+          isNumber(item) ? 'numberoll-placeholder-visible' : ''
         ]"
       >
         {{ item }}
       </span>
 
       <span
-        :class="['numroll-slider', 'numroll-slider-' + item]"
+        :class="['numberoll-slider', 'numberoll-slider-' + item]"
         v-if="isNumber(item)"
       >
         <span
-          class="numroll-slider__item"
+          class="numberoll-slider__item"
           v-for="sliderNum in slider"
           :key="sliderNum"
         >
@@ -35,13 +35,12 @@
 
 <script setup>
 import numeral from "numeral";
-import "numeral/locales/chs";
-numeral.locale("chs");
 
 import { defineProps, ref, watchEffect } from "vue";
 
 const props = defineProps({
-  modelValue: { type: Number, default: 0 }, // 持续时间
+  modelValue: { type: Number, default: 0 },
+  customValue: [String, Number],
 
   duration: { type: String, default: "0.25s" },
   delay: String,
@@ -58,10 +57,13 @@ function isNumber(num) {
 }
 
 watchEffect(() => {
-  value.value = numeral(props.modelValue).format(props.format).split("");
+  const valueStr =
+    props.customValue || numeral(props.modelValue).format(props.format);
+
+  value.value = valueStr.split("");
 });
 </script>
 
 <style scoped>
-@import url("./style.min.css");
+@import url("./lib/style.min.css");
 </style>
