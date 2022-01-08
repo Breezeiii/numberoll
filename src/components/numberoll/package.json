@@ -1,6 +1,6 @@
 {
   "name": "numberoll",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "vue3数字滑动，简单好用",
   "main": "main.js",
   "directories": {
