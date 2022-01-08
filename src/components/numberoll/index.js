@@ -5,30 +5,37 @@ import numberoll from "./index.vue";
 const name = "numberoll";
 
 const __default = {
-  delimiters: {
-    thousands: ",",
-    decimal: "."
-  },
-  abbreviations: {
-    thousand: "千",
-    million: "百万",
-    billion: "十亿",
-    trillion: "兆"
-  },
-  ordinal: function () {
-    return ".";
-  },
-  currency: {
-    symbol: "¥"
+  defaultFormat: "0,0.00",
+
+  locale: {
+    delimiters: {
+      thousands: ",",
+      decimal: "."
+    },
+    abbreviations: {
+      thousand: "千",
+      million: "百万",
+      billion: "十亿",
+      trillion: "兆"
+    },
+    ordinal: function () {
+      return ".";
+    },
+    currency: {
+      symbol: "¥"
+    }
   }
 };
 
 export default {
-  install: (app, options) => {
-    options = Object.assign(__default, options);
+  install: (app, options = {}) => {
+    const defaultFormat = options.defaultFormat || __default.defaultFormat;
+    const locale = options.locale || __default.locale;
 
-    const LOCAL_NAME = options?.name || "CustomLocal";
-    numeral.register("locale", LOCAL_NAME, options);
+    numeral.defaultFormat(defaultFormat);
+
+    const LOCAL_NAME = locale?.name || "CustomLocal";
+    numeral.register("locale", LOCAL_NAME, Object.assign(locale));
     numeral.locale(LOCAL_NAME);
 
     app.component(name, numberoll);

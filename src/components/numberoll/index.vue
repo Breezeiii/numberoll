@@ -45,7 +45,7 @@ const props = defineProps({
   delay: String,
   easing: { type: String, default: "linear" },
 
-  format: { type: String, default: "0,0.00" },
+  format: { type: String },
 
   customValue: [String, Number]
 });

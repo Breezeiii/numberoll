@@ -11,27 +11,30 @@ import numberoll from "numberoll";
 app.use(numberoll);
 ```
 
-### local
+### 全局options
 
 ```js
-/* options修改格式化全局参数 */
 // 默认
-const options = { 
-  delimiters: {
-    thousands: ",",
-    decimal: "."
-  },
-  abbreviations: {
-    thousand: "千",
-    million: "百万",
-    billion: "十亿",
-    trillion: "兆"
-  },
-  ordinal: function () {
-    return ".";
-  },
-  currency: {
-    symbol: "¥"
+const options = {
+  defaultFormat: "0,0.00",
+
+  locale: {
+    delimiters: {
+      thousands: ",",
+      decimal: "."
+    },
+    abbreviations: {
+      thousand: "千",
+      million: "百万",
+      billion: "十亿",
+      trillion: "兆"
+    },
+    ordinal: function () {
+      return ".";
+    },
+    currency: {
+      symbol: "¥"
+    }
   }
 }
 
@@ -65,6 +68,32 @@ customValue: [String, Number], // 自定义数字格式
 import { ref } from "vue";
 
 const customValue = ref("123#456$678*9.123.456.789.0");
+</script>
+```
+
+### 使用示例
+
+```vue
+<template>
+	<numberoll v-model="num" />
+    <br />
+	<!-- $货币占位符，固定为$，最终显示请配置全局options -->
+    <numberoll v-model="num" format="$0,0" />
+    <br />
+    <numberoll v-model="num" format="0,0$" />
+    <br />
+    <numberoll v-model="percent" format="+0.[0]%"/>
+</template>
+
+<script setup>
+import { ref } from "vue";
+const num = ref(0);
+const percent = ref(0);
+
+setInterval(() => {
+  num.value += 555555 * Math.random() * 100;
+  percent.value = Math.random() * (Math.random() > 0.5 ? 1 : -1);
+}, 3000);
 </script>
 ```
 

@@ -1,6 +1,6 @@
 <template>
   <div class="numberoll-group">
-    <h3 class="title">大小、颜色</h3>
+    <h3 class="title">css设置大小、颜色等</h3>
 
     <numberoll class="numberoll-1" v-model="num" />
     <br />
