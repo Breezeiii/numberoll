@@ -1,5 +1,5 @@
 <template>
-  <demo />
+  <numDemo />
   <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-import demo from "./";
+import numDemo from "./components/numroll/demo.vue";
 </script>
 
 <style lang="scss">
