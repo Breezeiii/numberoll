@@ -73,6 +73,8 @@ const customValue = ref("123#456$678*9.123.456.789.0");
 
 ### 使用示例
 
+[demo演示](https://liuhaifengzzzzz.github.io/numberoll)
+
 ```vue
 <template>
   <numberoll v-model="num" />
