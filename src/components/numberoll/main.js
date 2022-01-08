@@ -34,7 +34,7 @@ export default {
 
     numeral.defaultFormat(defaultFormat);
 
-    const LOCAL_NAME = locale?.name || "CustomLocal";
+    const LOCAL_NAME = locale.name || "CustomLocal";
     numeral.register("locale", LOCAL_NAME, Object.assign(locale));
     numeral.locale(LOCAL_NAME);
 
