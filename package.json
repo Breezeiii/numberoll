@@ -1,7 +1,6 @@
 {
-  "private": true,
   "name": "numberoll",
-  "version": "1.0.0",
+  "version": "1.1.8",
   "type": "module",
   "description": "Vue3 + Css3 简易的数字动效组件，让数字跑起来吧，比德芙更丝滑",
   "keywords": [
