@@ -1,10 +1,9 @@
 <template>
   <div class="numberoll-group">
     <h3 class="title">css设置大小、颜色等</h3>
-
-    <numberoll class="numberoll-1" v-model="num" />
+    <numberoll class="numberoll-1" v-model="num" format="0,0.00" />
     <br />
-    <numberoll class="numberoll-2" v-model="num" format="$0,0" />
+    <numberoll class="numberoll-2" v-model="num" format="$0,0.00" />
     <br />
     <numberoll class="numberoll-3" v-model="num" format="0,0$" />
     <br />
@@ -27,16 +26,20 @@
     <h3 class="title">自定义数字格式</h3>
     <numberoll class="numberoll-3" :custom-value="customValue" />
   </div>
+
+  <div>nnn: <nnn v-model="num" /></div>
 </template>
 
 <script setup>
-// import numberoll from "./index.vue";
+// import numberoll from "@lib";
+import { Numberoll as nnn } from "/dist/numberoll";
+// import  "/dist/style.css";
 
 import { ref } from "vue";
-const num = ref(0);
+const num = ref(123.456);
 const percent = ref(0);
 setInterval(() => {
-  num.value += 555555 * Math.random() * 100;
+  num.value += 123 * Math.random() * 100;
   percent.value = Math.random() * (Math.random() > 0.5 ? 1 : -1);
 }, 3000);
 

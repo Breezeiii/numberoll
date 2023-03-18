@@ -1,12 +1,9 @@
 import { createApp } from "vue";
+import "./style.css";
 import App from "./App.vue";
-import router from "./router";
-import store from "./store";
 
-import numberoll from "./components/numberoll";
+// import Numberoll from "@lib";
+import Numberoll from "/dist/numberoll";
+import "/dist/style.css";
 
-const app = createApp(App);
-
-app.use(store).use(router).use(numberoll);
-
-app.mount("#app");
+createApp(App).use(Numberoll).mount("#app");

@@ -2,8 +2,8 @@ $prefix: numberoll;
 
 .#{$prefix} {
   &,
-  .#{$prefix}-col {
-    display: inline-block;
+  .#{$prefix}-item {
+    display: inline-flex;
   }
 
   [class*="#{$prefix}"] {
@@ -12,13 +12,13 @@ $prefix: numberoll;
     animation-delay: inherit;
   }
 
-  .#{$prefix}-col {
+  .#{$prefix}-item {
     position: relative;
     text-align: center;
     overflow: hidden;
 
     .#{$prefix}-placeholder {
-      &.numberoll-placeholder-visible {
+      &.#{$prefix}-visible {
         opacity: 0;
         visibility: visible;
       }
@@ -43,7 +43,7 @@ $prefix: numberoll;
         }
       }
 
-      .#{$prefix}-slider-#{$i} {
+      .#{$prefix}-slider__to-#{$i} {
         animation-name: slider-#{$i};
       }
     }
