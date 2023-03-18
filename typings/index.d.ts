@@ -1,1 +1,2 @@
-declare module 'numberoll'
+declare module "numberoll";
+declare module "numeral";
