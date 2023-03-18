@@ -1,7 +1,56 @@
-# Vue 3 + Vite
+# Numberoll 
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+```js
+npm i Numberoll -S
+```
 
-## Recommended IDE Setup
+#### 全局引入
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+```js
+import { createApp } from "vue";
+import Numberoll from "Numberoll";
+import "Numberoll/dist/style.css";
+
+createApp(App).use(Numberoll ,{/* options */});
+```
+
+#### options
+
+默认值，文档查看[numeral](http://numeraljs.com/)
+
+```json
+{
+      delimiters: {
+        thousands: ",",
+        decimal: "."
+      },
+      abbreviations: {
+        thousand: "千",
+        million: "百万",
+        billion: "十亿",
+        trillion: "兆"
+      },
+      ordinal: function () {
+        return ".";
+      },
+      currency: {
+        symbol: "¥"
+      }
+    }
+```
+
+
+
+#### 局部引入
+
+```javascript
+import {Numberoll} from "Numberoll";
+import "Numberoll/dist/style.css";
+
+// 引入numeral，修改格式画样式
+```
+
+
+
+## [Homepage ](https://breezeiii.github.io/numberoll/#/)
+
