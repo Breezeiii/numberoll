@@ -4,14 +4,22 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Vue3 + Css3 简易的数字动效组件，让数字跑起来吧，比德芙更丝滑",
+  "keywords": [
+    "Vue3",
+    "Number",
+    "Animate",
+    "Roll",
+    "数字",
+    "数字动画"
+  ],
   "author": "Breezeiii",
   "homepage": "https://breezeiii.github.io/numberoll/#/",
   "repository": "https://github.com/Breezeiii/numberoll.git",
-  "bugs":{
-    "url":"https://github.com/Breezeiii/numberoll/issues",
+  "bugs": {
+    "url": "https://github.com/Breezeiii/numberoll/issues",
     "email": "breezeiii@qq.com"
   },
-  "license":"MIT",
+  "license": "MIT",
   "typings": "typings/index.d.ts",
   "files": [
     "dist"

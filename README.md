@@ -52,5 +52,42 @@ import "Numberoll/dist/style.css";
 
 
 
+#### Props
+
+```js
+const props = defineProps({
+  modelValue: { type: Number, default: 0 },
+  customValue: [String, Number, Array],
+
+  format: { type: String, default: "0,0" },
+  duration: { type: String, default: "0.25s" },
+  delay: String,
+  easing: { type: String, default: "linear" }
+});
+```
+
+
+
+#### Example
+
+```vue
+/**
+* 内置numeral格式化插件，文档查看：http://numeraljs.com
+*/
+<numberoll v-model="num" format="0,0$" />
+
+/**
+* custom 自由度极高，可以是：
+* 123*123
+* 我123|33
+* 你fjksdh234938
+* [1,2,'我','A']
+* 自己选择格式化工具，传递给Numberoll一个custom value，这样数字部分就会有滑动效果啦
+*/
+<numberoll :custom-value="customValue" />
+```
+
+
+
 ## [Homepage ](https://breezeiii.github.io/numberoll/#/)
 
