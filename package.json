@@ -1,6 +1,6 @@
 {
   "name": "numberoll",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "type": "module",
   "description": "Vue3 + Css3 简易的数字动效组件，让数字跑起来吧，比德芙更丝滑",
   "keywords": [
@@ -21,7 +21,8 @@
   "license": "MIT",
   "typings": "typings/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "typings"
   ],
   "main": "./dist/numberoll.umd.cjs",
   "module": "./dist/numberoll.js",
