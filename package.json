@@ -1,6 +1,6 @@
 {
   "name": "numberoll",
-  "version": "1.1.8",
+  "version": "1.2.0",
   "type": "module",
   "description": "Vue3 + Css3 简易的数字动效组件，让数字跑起来吧，比德芙更丝滑",
   "keywords": [
@@ -29,7 +29,8 @@
     ".": {
       "import": "./dist/numberoll.js",
       "require": "./dist/numberoll.umd.cjs"
-    }
+    },
+    "./dist/style.css": "./dist/style.css"
   },
   "scripts": {
     "dev": "vite",
